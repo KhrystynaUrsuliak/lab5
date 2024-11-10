@@ -5,10 +5,12 @@ import lombok.Setter;
 
 import java.util.Objects;
 import java.time.LocalDate;
+import java.util.UUID;
 
 @Setter
 @Getter
 public class Course {
+    private int id;
     private String name;
     private Language language;
     private String level;
@@ -24,7 +26,6 @@ public class Course {
         this.endDate = endDate;
         this.price = price;
     }
-
 
     @Override
     public String toString() {
